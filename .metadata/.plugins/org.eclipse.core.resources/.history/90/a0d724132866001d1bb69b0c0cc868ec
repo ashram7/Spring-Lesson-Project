@@ -32,8 +32,8 @@ public class BookController {
 	/* create 메소드는 브라우저에서 /create 주소가 GET 방식으로 입력되었을 때 book/create 경로의 뷰를 보여준다. */
 	
 	//데이터의 변경(입력)이 일어나므로 http 메소드는 POST 방식으로 처리	
-	//@RequestParam 어노테이션을 통해 HTTP 파라미터를 map 변수에 자동으로 바인딩
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
+	//@RequestParam 어노테이션을 통해 HTTP 파라미터를 map 변수에 자동으로 바인딩
 	public ModelAndView createPost(@RequestParam Map<String, Object> map) {
 	    ModelAndView mav = new ModelAndView();
 
