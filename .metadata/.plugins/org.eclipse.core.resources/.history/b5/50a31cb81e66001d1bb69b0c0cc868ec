@@ -1,0 +1,5 @@
+package com.ashram.spring;
+
+public class BookDao {
+
+}
