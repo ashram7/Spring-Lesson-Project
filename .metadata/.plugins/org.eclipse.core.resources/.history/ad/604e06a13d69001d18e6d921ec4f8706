@@ -34,13 +34,6 @@ public class BookServiceImpl implements BookService{
         int affectRowCount = this.bookDao.update(map);
         return affectRowCount == 1;
     }    
-    
-    @Override
-    public boolean remove(Map<String, Object> map) {
-        int affectRowCount = this.bookDao.delete(map);
-        //삭제의 경우 수정과 동일하게 한 개의 행이 제대로 영향받았는지만 검사
-        return affectRowCount == 1;
-    }    
 }
 
 
