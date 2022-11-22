@@ -1,24 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf8"
+    pageEncoding="utf8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ц╔ ╦Я╥о</title>
+    <title>Л╠┘ К╙╘К║²</title>
 </head>
 <body>
-    <h1>ц╔ ╦Я╥о</h1>
+    <h1>Л╠┘ К╙╘К║²</h1>
         <p>
             <form>
-                <input type="text" placeholder="╟к╩Ж" name="keyword" value="${keyword}" />
-                <input type="submit" value="╟к╩Ж" />
+                <input type="text" placeholder="Й╡─Л┐┴" name="keyword" value="${keyword}" />
+                <input type="submit" value="Й╡─Л┐┴" />
             </form>			
         </p>    
     
         <table>
             <thead>
-                <tr><td>а╕╦Я</td><td>д╚ев╟М╦╝</td><td>╟║╟щ</td></tr>
+                <tr><td>Л═°К╙╘</td><td>Л╧╢М┘▄ЙЁ═К╕╛</td><td>Й╟─Й╡╘</td></tr>
             </thead>
             <tbody>
             <c:forEach var="row" items="${data}">
@@ -37,7 +37,7 @@
             </tbody>
         </table>
         <p>
-            <a href="/create">╩Щ╪╨</a>
+            <a href="/create">Л┐²Л└╠</a>
         </p>    
 </body>
 </html>
