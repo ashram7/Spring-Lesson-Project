@@ -53,8 +53,11 @@
             from
             book
             where 1 = 1
-            order by insert_date desc
         ]]>
+        <if test="keyword != null and keyword != ''">
+           and (title like CONCAT('%',#{keyword},'%') or category like CONCAT('%',#{keyword},'%'))
+        </if>
+        order by insert_date desc
     </select>
 	
 </mapper>

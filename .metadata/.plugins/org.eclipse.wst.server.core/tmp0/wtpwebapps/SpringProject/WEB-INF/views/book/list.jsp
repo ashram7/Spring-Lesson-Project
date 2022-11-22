@@ -9,6 +9,13 @@
 </head>
 <body>
     <h1>책 목록</h1>
+        <p>
+            <form>
+                <input type="text" placeholder="검색" name="keyword" value="${keyword}" />
+                <input type="submit" value="검색" />
+            </form>			
+        </p>    
+    
         <table>
             <thead>
                 <tr><td>제목</td><td>카테고리</td><td>가격</td></tr>
